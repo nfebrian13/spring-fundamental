@@ -12,3 +12,11 @@ sebelum, sesudah ataupun sekitar ekseskusi method.
    2. mencatat pesan keluar setelah mengeksekusi isi pesan
    3. mencatat waktu yang diambil oleh metode untuk menyelesaikan eksekusi   
    
+   Istilah-istilah di AOP
+   1. Logging 		 		 =>  Aspect
+   2. Method yang dieksekusi => joint point
+   3. Mencatat pesan entri, pesan keluar dan waktu yang
+      dibutuhkan untuk menjalankan metode ini dikenal 
+	  dengan => three advices
+   4. Daftar metode yang memerlukan behaviour => point cuts
+   5. Objek java di mana aspek ini diterapkan => Target.
