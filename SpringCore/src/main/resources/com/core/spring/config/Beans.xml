@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- Below is an example of injecting the dependencies using setter method -->
+	<bean id="bookTitle"
+		class="com.core.spring.model.Title">
+		<property name="titleValue">
+			<value>My first Spring book</value>
+		</property>
+	</bean>
+	
+	<!-- Below are examples of injecting the dependencies using constructor -->
+	<bean id="chapter1Title"
+		class="com.core.spring.model.Title">
+		<constructor-arg>
+			<value>Spring framework - Chapter 1</value>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="chapter2Title"
+		class="com.core.spring.model.Title">
+		<constructor-arg>
+			<value>Spring framework - Chapter 2</value>
+		</constructor-arg>
+	</bean>
+	
+</beans>
