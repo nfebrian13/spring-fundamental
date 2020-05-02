@@ -50,4 +50,33 @@
 		</constructor-arg>
 	</bean>
 
+	<!-- injecting the dependencies of chapter 2 using constructor by type -->
+	<bean id="chapter3" class="com.core.spring.model.Chapter">
+		<constructor-arg type="int">
+			<value>2</value>
+		</constructor-arg>
+		<constructor-arg type="com.core.spring.model.Title">
+			<ref bean="chapter2Title" />
+		</constructor-arg>
+		<constructor-arg type="String">
+			<value>The content of chapter 2 goes here.</value>
+		</constructor-arg>
+	</bean>
+
+	<!-- injecting the dependencies of chapter 1 by using inner bean -->
+	<bean id="chapter4" class="com.core.spring.model.Chapter">
+		<property name="number">
+			<value>1</value>
+		</property>
+		<property name="content">
+			<value>The content of chapter 1 goes here.</value>
+		</property>
+		<property name="title">
+			<bean class="com.core.spring.model.Title">
+				<constructor-arg>
+					<value>Spring framework - Chapter 1</value>
+				</constructor-arg>
+			</bean>
+		</property>
+	</bean>
 </beans>
