@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [02/May/2020:22:49:14 +0700] "GET / HTTP/1.1" 404 - http-bio-8080-exec-2 0
+0:0:0:0:0:0:0:1 - - [02/May/2020:22:49:30 +0700] "GET /SpringMvc HTTP/1.1" 404 - http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [02/May/2020:22:49:39 +0700] "GET /SpringMVC HTTP/1.1" 302 - http-bio-8080-exec-5 0
+0:0:0:0:0:0:0:1 - - [02/May/2020:22:49:47 +0700] "GET /SpringMVC/ HTTP/1.1" 200 383 http-bio-8080-exec-6 7893
+0:0:0:0:0:0:0:1 - - [02/May/2020:22:49:48 +0700] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-7 0
+0:0:0:0:0:0:0:1 - - [02/May/2020:22:50:59 +0700] "GET /SpringMVC/listBooks.htm HTTP/1.1" 200 619 http-bio-8080-exec-10 9895
+0:0:0:0:0:0:0:1 - - [02/May/2020:22:51:05 +0700] "GET /SpringMVC/displayBookTOC.htm?isbn=1 HTTP/1.1" 200 827 http-bio-8080-exec-10 1391

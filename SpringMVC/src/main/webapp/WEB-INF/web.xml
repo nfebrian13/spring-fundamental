@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<web-app
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://java.sun.com/xml/ns/javaee"
-	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
-	id="WebApp_ID" version="3.0">
-	
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
 	<display-name>SpringMVC</display-name>
-	
-	<!-- Spring Application Context 
-		 Configurasi dengan cara Multiple application context files.-->
-	
+	<!-- Spring Application Context Configurasi dengan cara Multiple application 
+		context files. -->
+		
 	<servlet>
 		<servlet-name>myLibraryAppFrontController</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>
-				classpath:libraryAppContext.xml
-				classpath:books.xml
-				classpath:chapters.xml
-				classpath:titles.xml
-			</param-value>
+			<param-value>/WEB-INF/com/core/spring/config/libraryAppContext.xml
+                      	 /WEB-INF/com/core/spring/config/books.xml
+                         /WEB-INF/com/core/spring/config/chapters.xml
+                         /WEB-INF/com/core/spring/config/titles.xml</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
@@ -35,3 +33,5 @@
 	</welcome-file-list>
 	
 </web-app>
+
+

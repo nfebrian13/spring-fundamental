@@ -17,7 +17,7 @@ Spring’s MVC module
 	DispatcherServlet merujuk pada ViewResolver untuk menemukan objek tampilan aktual berdasarkan pada nama logis. 
 	DispatcherServlet kemudian meneruskan objek model ke objek tampilan yang kemudian diberikan kepada pengguna akhir.	
 	
--- DispatcherServlet
+# DispatcherServlet
    DispatcherServlet bertindak sebagai pengontrol depan dalam modul MVC Spring. 
    Semua permintaan pengguna ditangani oleh servlet ini. Karena ini seperti servlet lainnya, 
    itu harus dikonfigurasikan dalam file deskriptor penerapan web aplikasi yaitu web.xml.
@@ -56,3 +56,13 @@ Spring’s MVC module
    2. SimpleUrlHandlerMapping
       BeanNameUrlHandlerMapping memberi batasan pada nama kacang pengontrol yang harus cocok dengan URL permintaan yang masuk. 
 	  SimpleUrlHandlerMapping menghapus pembatasan ini dan memetakan kacang pengontrol untuk meminta URL menggunakan “pemetaan” properti.
+
+#  Spring Controller
+   1. AbstractController
+   2. MultiActionController
+
+#  MethodNameResolver
+   1. ParameterMethodNameResolver 
+   2. PropertiesMethodNameResolver
+   
+#  ModelAndView and ViewResolver   
