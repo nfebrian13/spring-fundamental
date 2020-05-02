@@ -20,3 +20,10 @@ sebelum, sesudah ataupun sekitar ekseskusi method.
 	  dengan => three advices
    4. Daftar metode yang memerlukan behaviour => point cuts
    5. Objek java di mana aspek ini diterapkan => Target.
+   
+-- Beberapa advice yang tersedia di AOP framework
+   1. Before advice 
+   2. After returning advice
+   3. After throwing advice
+   4. Around advice   
+   
