@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.core.spring.model.Title;
 
 /** 
- * Berikut adalah contoh untuk memanggil DI yang telah dikonfigurasi di xml
+ * Berikut adalah contoh untuk memanggil DI yang telah dikonfigurasi di xml (xml based configuration)
  * 
  * */
 
