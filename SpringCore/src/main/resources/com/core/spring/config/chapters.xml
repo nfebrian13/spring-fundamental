@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- injecting the dependencies of chapter1 using setter method -->
+	<bean id="chapter1" class="com.core.spring.model.Chapter">
+		<property name="number">
+			<value>1</value>
+		</property>
+		<property name="title">
+			<ref bean="chapter1Title" />
+		</property>
+		<property name="content">
+			<value>The content of chapter 1 goes here.</value>
+		</property>
+	</bean>
+
+	<!-- injecting the dependencies of chapter 2 using constructor by index -->
+	<bean id="chapter2" class="com.core.spring.model.Chapter">
+		<constructor-arg index="0">
+			<value>2</value>
+		</constructor-arg>
+		<constructor-arg index="1">
+			<ref bean="chapter2Title" />
+		</constructor-arg>
+		<constructor-arg index="2">
+			<value>The content of chapter 2 goes here.</value>
+		</constructor-arg>
+	</bean>
+
+	<!-- injecting the dependencies of chapter 2 using constructor by type -->
+	<bean id="chapter3" class="com.core.spring.model.Chapter">
+		<constructor-arg type="int">
+			<value>2</value>
+		</constructor-arg>
+		<constructor-arg type="com.core.spring.model.Title">
+			<ref bean="chapter2Title" />
+		</constructor-arg>
+		<constructor-arg type="String">
+			<value>The content of chapter 2 goes here.</value>
+		</constructor-arg>
+	</bean>
+
+	<!-- injecting the dependencies of chapter 1 by using inner bean -->
+	<bean id="chapter4" class="com.core.spring.model.Chapter">
+		<property name="number">
+			<value>1</value>
+		</property>
+		<property name="content">
+			<value>The content of chapter 1 goes here.</value>
+		</property>
+		<property name="title">
+			<bean class="com.core.spring.model.Title">
+				<constructor-arg>
+					<value>Spring framework - Chapter 1</value>
+				</constructor-arg>
+			</bean>
+		</property>
+	</bean>
+
+
+</beans>
