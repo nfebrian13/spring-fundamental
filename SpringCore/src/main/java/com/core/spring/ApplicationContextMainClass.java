@@ -21,10 +21,16 @@ public class ApplicationContextMainClass {
 		Title constructorInjection = (Title) springContainer.getBean("chapter1Title");
 		System.out.println(constructorInjection.getTitleValue());  */
 		
+		/* injecting the dependencies of chapter 1 by setter method */
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/core/spring/config/beans.xml");
-		Chapter chapter = (Chapter) context.getBean("chapter1");
-		System.out.println(chapter.getContent());
-		System.out.println(chapter.getTitle().getTitleValue());
+		Chapter chapter1 = (Chapter) context.getBean("chapter1");
+		System.out.println(chapter1.getContent());
+		System.out.println(chapter1.getTitle().getTitleValue());
+		
+		/* injecting the dependencies of chapter 2 using constructor by index */
+		Chapter chapter2 = (Chapter) context.getBean("chapter2");
+		System.out.println(chapter2.getContent());
+		System.out.println(chapter2.getTitle().getTitleValue());
 		
 	}
 

@@ -5,28 +5,25 @@
       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 	<!-- Below is an example of injecting the dependencies using setter method -->
-	<bean id="bookTitle"
-		class="com.core.spring.model.Title">
+	<bean id="bookTitle" class="com.core.spring.model.Title">
 		<property name="titleValue">
 			<value>My first Spring book</value>
 		</property>
 	</bean>
-	
+
 	<!-- Below are examples of injecting the dependencies using constructor -->
-	<bean id="chapter1Title"
-		class="com.core.spring.model.Title">
+	<bean id="chapter1Title" class="com.core.spring.model.Title">
 		<constructor-arg>
 			<value>Spring framework - Chapter 1</value>
 		</constructor-arg>
 	</bean>
-	
-	<bean id="chapter2Title"
-		class="com.core.spring.model.Title">
+
+	<bean id="chapter2Title" class="com.core.spring.model.Title">
 		<constructor-arg>
 			<value>Spring framework - Chapter 2</value>
 		</constructor-arg>
 	</bean>
-	
+
 	<!-- injecting the dependencies of chapter1 using setter method -->
 	<bean id="chapter1" class="com.core.spring.model.Chapter">
 		<property name="number">
@@ -39,5 +36,18 @@
 			<value>The content of chapter 1 goes here.</value>
 		</property>
 	</bean>
-	
+
+	<!-- injecting the dependencies of chapter 2 using constructor by index -->
+	<bean id="chapter2" class="com.core.spring.model.Chapter">
+		<constructor-arg index="0">
+			<value>2</value>
+		</constructor-arg>
+		<constructor-arg index="1">
+			<ref bean="chapter2Title" />
+		</constructor-arg>
+		<constructor-arg index="2">
+			<value>The content of chapter 2 goes here.</value>
+		</constructor-arg>
+	</bean>
+
 </beans>
