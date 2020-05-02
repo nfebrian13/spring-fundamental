@@ -1,8 +1,12 @@
 package com.core.spring.config;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import com.core.spring.model.Book;
 import com.core.spring.model.Chapter;
 import com.core.spring.model.Title;
 
@@ -40,6 +44,20 @@ public class BeansConfiguration {
 	public Chapter chapter2() {
 		// Injecting the dependencies of chapter2 using constructor method
 		return new Chapter(2, chapter2Title(), "The content of chapter 2 goes here.");
+	}
+
+	// Title and Chapter beans already defined earlier
+	@Bean
+	public Book myFirstSpringBook() {
+		Book book = new Book();
+		book.setIsbn(1);
+		book.setAuthor("Mr. XYZ");
+		book.setTitle(bookTitle());
+		List<Chapter> chapters = new ArrayList<Chapter>();
+		chapters.add(chapter1());
+		chapters.add(chapter2());
+		book.setChapters(chapters);
+		return book;
 	}
 
 }

@@ -79,4 +79,23 @@
 			</bean>
 		</property>
 	</bean>
+
+	<bean id="myFirstSpringBook" class="com.core.spring.model.Book">
+		<property name="isbn">
+			<value>1</value>
+		</property>
+		<property name="author">
+			<value>Mr. XYZ</value>
+		</property>
+		<property name="title">
+			<ref bean="bookTitle" />
+		</property>
+		<property name="chapters">
+			<list>
+				<ref bean="chapter1" />
+				<ref bean="chapter2" />
+			</list>
+		</property>
+	</bean>
+	
 </beans>
