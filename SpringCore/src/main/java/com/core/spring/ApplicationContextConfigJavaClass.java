@@ -15,6 +15,8 @@ import com.core.spring.model.Title;
 public class ApplicationContextConfigJavaClass {
 
 	public static void main(String[] args) {
+		
+		/* Calling Tittle */
 		ApplicationContext context = new AnnotationConfigApplicationContext(BeansConfiguration.class);
 		Title setterInjection = (Title) context.getBean("bookTitle"); /* bookTitle => id object di xml beans */
 		Title constructorInjection = (Title) context.getBean("chapter1Title");

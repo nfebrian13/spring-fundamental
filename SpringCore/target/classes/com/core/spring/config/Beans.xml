@@ -27,4 +27,17 @@
 		</constructor-arg>
 	</bean>
 	
+	<!-- injecting the dependencies of chapter1 using setter method -->
+	<bean id="chapter1" class="com.core.spring.model.Chapter">
+		<property name="number">
+			<value>1</value>
+		</property>
+		<property name="title">
+			<ref bean="chapter1Title" />
+		</property>
+		<property name="content">
+			<value>The content of chapter 1 goes here.</value>
+		</property>
+	</bean>
+	
 </beans>
