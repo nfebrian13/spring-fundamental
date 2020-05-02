@@ -1,0 +1,14 @@
+Aspect Oriented Programming(AOP)
+secara sederhana cara kerja AOP yaitu membajak ekseskusi program dan inject fitur tambahan
+sebelum, sesudah ataupun sekitar ekseskusi method.
+-- Tujuan Aspect 
+   1. logging 
+   2. manajemen transaksi
+   3. exception handling
+   4. performance monitoring.
+
+-- implementasi sederhananya
+   1. mencatat loging sebelum mengeksekusi method body
+   2. mencatat pesan keluar setelah mengeksekusi isi pesan
+   3. mencatat waktu yang diambil oleh metode untuk menyelesaikan eksekusi   
+   
