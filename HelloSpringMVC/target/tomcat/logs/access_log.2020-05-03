@@ -34,3 +34,9 @@
 0:0:0:0:0:0:0:1 - - [03/May/2020:12:44:02 +0700] "POST /HelloSpringMVC/uploadFile HTTP/1.1" 200 335 http-bio-8080-exec-2 165
 0:0:0:0:0:0:0:1 - - [03/May/2020:12:44:26 +0700] "GET /HelloSpringMVC/uploadFile HTTP/1.1" 200 884 http-bio-8080-exec-2 6
 0:0:0:0:0:0:0:1 - - [03/May/2020:12:44:41 +0700] "POST /HelloSpringMVC/uploadFile HTTP/1.1" 404 1027 http-bio-8080-exec-2 5
+0:0:0:0:0:0:0:1 - - [03/May/2020:12:45:35 +0700] "GET /HelloSpringMVC/uploadFile HTTP/1.1" 200 884 http-bio-8080-exec-2 244
+0:0:0:0:0:0:0:1 - - [03/May/2020:12:45:49 +0700] "POST /HelloSpringMVC/uploadFile HTTP/1.1" 200 588 http-bio-8080-exec-3 1628
+0:0:0:0:0:0:0:1 - - [03/May/2020:13:00:25 +0700] "GET /HelloSpringMVC/register HTTP/1.1" 500 4278 http-bio-8080-exec-6 582
+0:0:0:0:0:0:0:1 - - [03/May/2020:13:01:37 +0700] "GET /HelloSpringMVC/register HTTP/1.1" 500 4278 http-bio-8080-exec-2 1197
+0:0:0:0:0:0:0:1 - - [03/May/2020:13:03:25 +0700] "GET /HelloSpringMVC/register HTTP/1.1" 500 4278 http-bio-8080-exec-4 609
+0:0:0:0:0:0:0:1 - - [03/May/2020:13:03:34 +0700] "GET /HelloSpringMVC/register HTTP/1.1" 500 4278 http-bio-8080-exec-3 280
