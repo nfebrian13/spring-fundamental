@@ -20,6 +20,8 @@
 		<org.validation.api.version>2.0.1.Final</org.validation.api.version>
 		<org.hibernate.validator.version>5.4.3.Final</org.hibernate.validator.version>
 		<org.super-csv.version>2.4.0</org.super-csv.version>
+		<org.apache.poi.version>3.9</org.apache.poi.version>
+		<org.apache.poi.ooxml.version>3.9</org.apache.poi.ooxml.version>
 		<java.version>1.8</java.version>
 	</properties>
 
@@ -116,6 +118,17 @@
 			<artifactId>super-csv</artifactId>
 			<version>${org.super-csv.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>${org.apache.poi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>${org.apache.poi.ooxml.version}</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

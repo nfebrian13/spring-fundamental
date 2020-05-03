@@ -1,6 +1,7 @@
 package com.mvc.hello.spring.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -15,6 +16,7 @@ import org.supercsv.io.ICsvBeanWriter;
 import org.supercsv.prefs.CsvPreference;
 
 import com.mvc.hello.spring.model.Book;
+import com.mvc.hello.spring.model.Novel;
 
 @Controller
 public class FileCSVDownloadController {
@@ -83,5 +85,22 @@ public class FileCSVDownloadController {
 		}
 
 		csvWriter.close();
+	}
+
+	/**
+	 * Handle request to download an Excel document
+	 */
+	@RequestMapping(value = "/downloadExcel", method = RequestMethod.GET)
+	public ModelAndView downloadExcel() {
+		// create some sample data
+		List<Novel> listBooks = new ArrayList<Novel>();
+		listBooks.add(new Novel("Effective Java", "Joshua Bloch", "0321356683", "May 28, 2008", 38.11F));
+		listBooks.add(new Novel("Head First Java", "Kathy Sierra & Bert Bates", "0596009208", "February 9, 2005", 30.80F));
+		listBooks.add(new Novel("Java Generics and Collections", "Philip Wadler", "0596527756", "Oct 24, 2006", 29.52F));
+		listBooks.add(new Novel("Thinking in Java", "Bruce Eckel", "0596527756", "February 20, 2006", 43.97F));
+		listBooks.add(new Novel("Spring in Action", "Craig Walls", "1935182358", "June 29, 2011", 31.98F));
+
+		// return a view which will be resolved by an excel view resolver
+		return new ModelAndView("excelView", "listBooks", listBooks);
 	}
 }
