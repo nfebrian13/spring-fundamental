@@ -22,3 +22,7 @@
 0:0:0:0:0:0:0:1 - - [03/May/2020:11:58:34 +0700] "GET /HelloSpringMVC/doMath?a=2000&b=ten HTTP/1.1" 400 968 http-bio-8080-exec-9 23
 0:0:0:0:0:0:0:1 - - [03/May/2020:11:58:47 +0700] "GET /HelloSpringMVC/doMath?a=2000&b=0 HTTP/1.1" 500 3752 http-bio-8080-exec-4 33
 0:0:0:0:0:0:0:1 - - [03/May/2020:12:02:37 +0700] "GET /HelloSpringMVC/doMath?a=2000&b=0 HTTP/1.1" 200 344 http-bio-8080-exec-1 2237
+0:0:0:0:0:0:0:1 - - [03/May/2020:12:16:11 +0700] "GET /HelloSpringMVC/ HTTP/1.1" 200 338 http-bio-8080-exec-1 316
+0:0:0:0:0:0:0:1 - - [03/May/2020:12:16:19 +0700] "GET /HelloSpringMVC/doMath?a=2000&b=20 HTTP/1.1" 200 419 http-bio-8080-exec-3 50
+0:0:0:0:0:0:0:1 - - [03/May/2020:12:18:56 +0700] "GET /HelloSpringMVC/ HTTP/1.1" 200 338 http-bio-8080-exec-2 302
+0:0:0:0:0:0:0:1 - - [03/May/2020:12:18:58 +0700] "GET /HelloSpringMVC/test HTTP/1.1" 200 292 http-bio-8080-exec-3 14

@@ -14,6 +14,7 @@
 		<org.commons.loging.version>1.2</org.commons.loging.version>
 		<org.javax.servlet.jstl>1.2</org.javax.servlet.jstl>
 		<org.javax.servlet.api.jstl>3.1.0</org.javax.servlet.api.jstl>
+		<org.log4j.version>1.2.17</org.log4j.version>
 	</properties>
 
 	<dependencies>
@@ -78,6 +79,11 @@
 			<artifactId>javax.servlet-api</artifactId>
 			<version>${org.javax.servlet.api.jstl}</version>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${org.log4j.version}</version>
 		</dependency>
 	</dependencies>
 
