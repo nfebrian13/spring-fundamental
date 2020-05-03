@@ -69,8 +69,14 @@
 	<!-- Message configuration -->
 	<bean id="messageSource"
 		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
-		<property name="basename" value="classpath:messages.properties" />
-
+		<property name="basename"
+			value="classpath:messages.properties" />
 	</bean>
 
+	<!-- View Excel configuration -->
+	<bean id="csvViewResolver"
+		class="org.springframework.web.servlet.view.ResourceBundleViewResolver">
+		<property name="order" value="1" />
+		<property name="basename" value="excel" />
+	</bean>
 </beans>

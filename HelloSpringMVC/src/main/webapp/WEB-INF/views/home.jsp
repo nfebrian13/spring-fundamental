@@ -12,6 +12,8 @@
 <body>
 		<h1>Hello World!</h1>
 		<p>The time on the server is ${serverTime} </p>
-		 <h2><a href=${pageContext.request.contextPath}/download>Click here to download file</a></h2>
+		<p><a href=${pageContext.request.contextPath}/download>Click here to download file</a></p>
+		<p><a href=${pageContext.request.contextPath}/downloadCSV>Download CSV #1</a></p>
+        <p><a href=${pageContext.request.contextPath}/viewCSV>Download CSV #2</a></p>
 </body>
 </html>
