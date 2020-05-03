@@ -12,5 +12,6 @@
 <body>
 		<h1>Hello World!</h1>
 		<p>The time on the server is ${serverTime} </p>
+		 <h2><a href=${pageContext.request.contextPath}/download>Click here to download file</a></h2>
 </body>
 </html>
