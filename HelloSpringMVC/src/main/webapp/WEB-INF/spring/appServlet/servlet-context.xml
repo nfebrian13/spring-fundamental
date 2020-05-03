@@ -22,19 +22,26 @@
 
 	<!-- Enables the spring MVC @Controller programming model -->
 	<mvc:annotation-driven />
-	
+
 	<!-- Handle HTTP GET Requests for /resources/** by efficiently serving up 
 		static resource -->
-	<mvc:resources mapping="/resources/**"
-		location="/resources/" />
+	<mvc:resources mapping="/resources/**" location="/resources/" />
 
-	<bean id="viewResolver"
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/views/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
 
-	<context:component-scan
-		base-package="com.mvc.hello.spring" />
+	<context:component-scan base-package="com.mvc.hello.spring" />
+
+	<!-- Handling error mathError -->
+	<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<props>
+				<prop key="java.lang.ArithmeticException">mathError</prop>
+			</props>
+		</property>
+
+	</bean>
 
 </beans>
