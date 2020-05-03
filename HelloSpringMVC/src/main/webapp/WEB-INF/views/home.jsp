@@ -16,5 +16,6 @@
 		<p><a href=${pageContext.request.contextPath}/downloadCSV>Download CSV #1</a></p>
         <p><a href=${pageContext.request.contextPath}/viewCSV>Download CSV #2</a></p>
         <p><a href=${pageContext.request.contextPath}/downloadExcel>Download Excel Document POI library</a></p>
+        <p><a href=${pageContext.request.contextPath}//downloadPDF>Download PDF Document Itext library</a></p>
 </body>
 </html>

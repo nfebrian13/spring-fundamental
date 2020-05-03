@@ -84,3 +84,5 @@
 0:0:0:0:0:0:0:1 - - [03/May/2020:15:13:19 +0700] "GET /HelloSpringMVC/downloadExcel HTTP/1.1" 500 6427 http-bio-8080-exec-3 115
 0:0:0:0:0:0:0:1 - - [03/May/2020:15:29:32 +0700] "GET /HelloSpringMVC/ HTTP/1.1" 200 636 http-bio-8080-exec-2 445
 0:0:0:0:0:0:0:1 - - [03/May/2020:15:29:35 +0700] "GET /HelloSpringMVC/downloadExcel HTTP/1.1" 500 3445 http-bio-8080-exec-3 873
+0:0:0:0:0:0:0:1 - - [03/May/2020:15:39:02 +0700] "GET /HelloSpringMVC/ HTTP/1.1" 200 636 http-bio-8080-exec-2 340
+0:0:0:0:0:0:0:1 - - [03/May/2020:15:39:05 +0700] "GET /HelloSpringMVC/downloadExcel HTTP/1.1" 200 3813 http-bio-8080-exec-3 1203

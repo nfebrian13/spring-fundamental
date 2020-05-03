@@ -77,6 +77,6 @@
 	<bean id="csvViewResolver"
 		class="org.springframework.web.servlet.view.ResourceBundleViewResolver">
 		<property name="order" value="1" />
-		<property name="basename" value="excel" />
+		<property name="basename" value="view" />
 	</bean>
 </beans>
