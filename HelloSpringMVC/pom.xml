@@ -139,7 +139,7 @@
 	<build>
 		<finalName>HelloSpringMVC</finalName>
 		<plugins>
-			<plugin>
+		<!--<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
@@ -147,7 +147,7 @@
 					<port>8080</port>
 					<contextReloadable>true</contextReloadable>
 				</configuration>
-			</plugin>
+			</plugin> -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
