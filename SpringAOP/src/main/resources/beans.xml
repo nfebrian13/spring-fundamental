@@ -4,18 +4,12 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<bean id="libraryServiceTarget"
-		class="com.aop.spring.service.LibraryService" />
+	<bean id="libraryServiceTarget" class="com.aop.spring.service.LibraryService" />
 
 	<bean id="logInputAdvice" class="com.aop.spring.advice.LogInput" />
-
 	<bean id="logOutputAdvice" class="com.aop.spring.advice.LogOutput" />
-
-	<bean id="logExceptionAdvice"
-		class="com.aop.spring.advice.LogException" />
-
-	<bean id="performanceMonitoringAdvice"
-		class="com.aop.spring.advice.PerformanceMonitoring" />
+	<bean id="logExceptionAdvice" class="com.aop.spring.advice.LogException" />
+	<bean id="performanceMonitoringAdvice" class="com.aop.spring.advice.PerformanceMonitoring" />
 
 	<bean id="logInputPointcutAdvisor"
 		class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
