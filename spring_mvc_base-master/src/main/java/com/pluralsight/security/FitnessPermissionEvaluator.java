@@ -9,6 +9,12 @@ import org.springframework.security.access.PermissionEvaluator;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.User;
 
+/** 
+ * class yang digunakan untuk handling submit (pos) user dengan role tertentu saja
+ * setting pada database
+ * 
+ * */
+
 public class FitnessPermissionEvaluator implements PermissionEvaluator {
 
 	private DataSource dataSource;
