@@ -22,4 +22,9 @@ public class LoginController {
 		return "login";
 	}
 
+	@RequestMapping(value = "/logout", method = RequestMethod.GET)
+	public String logout(ModelMap model) {
+		System.out.println("in the logout method");
+		return "logout";
+	}
 }
