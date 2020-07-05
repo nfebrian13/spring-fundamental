@@ -2,6 +2,7 @@ package com.pluralsight.controller;
 
 import javax.validation.Valid;
 
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -25,6 +26,15 @@ public class GoalController {
 		return "addGoal";
 	}
 	
+	/** 
+	 * @PreAuthorize => berfungsi untuk handling ketika submit dengan role tertentu saja.
+	 * Setting pada servlet config dengan menambahkan 
+	 * <security:global-method-security pre-post-annotations="enabled"/>
+	 * 
+	 * */
+	
+	
+	@PreAuthorize("hasRole('ROLE_ADMIN')")
 	@RequestMapping(value = "addGoal", method = RequestMethod.POST)
 	public String updateGoal(@Valid @ModelAttribute("goal") Goal goal, BindingResult result) {
 		
