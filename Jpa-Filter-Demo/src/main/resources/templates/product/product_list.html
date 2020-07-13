@@ -3,6 +3,14 @@
 	xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>Product Page</title>
+
+	<script type="text/javascript">
+		function clearFilter(){
+			console.log("wakwaw");
+			window.location = '/';
+		}
+	</script>
+	
 </head>
 
 <body>
@@ -57,7 +65,7 @@
 									<form th:action="@{/}">
 										Filter: <input type="text" name="keyword" th:value="${keyword}" required="required"/>
 										<input class="btn btn-primary" type="submit" value="Search"/>
-										<input class="btn btn-default" type="button" value="Clear"/>
+										<input class="btn btn-default" type="button" value="clear" onclick="clearFilter()" />
 									</form>
 								</div>
 								<br>
