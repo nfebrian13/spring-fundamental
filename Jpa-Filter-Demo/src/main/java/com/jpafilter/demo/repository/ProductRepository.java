@@ -8,7 +8,6 @@ import org.springframework.data.jpa.repository.Query;
 import com.jpafilter.demo.model.Product;
 
 public interface ProductRepository extends JpaRepository<Product, Long> {
-
 	
  /* @Query("SELECT p FROM Product p WHERE p.name LIKE %?1%"
 			+ " OR p.brand LIKE %?1%"
