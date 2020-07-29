@@ -86,3 +86,9 @@
 0:0:0:0:0:0:0:1 - - [03/May/2020:15:29:35 +0700] "GET /HelloSpringMVC/downloadExcel HTTP/1.1" 500 3445 http-bio-8080-exec-3 873
 0:0:0:0:0:0:0:1 - - [03/May/2020:15:39:02 +0700] "GET /HelloSpringMVC/ HTTP/1.1" 200 636 http-bio-8080-exec-2 340
 0:0:0:0:0:0:0:1 - - [03/May/2020:15:39:05 +0700] "GET /HelloSpringMVC/downloadExcel HTTP/1.1" 200 3813 http-bio-8080-exec-3 1203
+0:0:0:0:0:0:0:1 - - [03/May/2020:15:52:01 +0700] "GET /HelloSpringMVC/ HTTP/1.1" 200 727 http-bio-8080-exec-2 2538
+0:0:0:0:0:0:0:1 - - [03/May/2020:15:52:03 +0700] "GET /HelloSpringMVC//downloadPDF HTTP/1.1" 200 1541 http-bio-8080-exec-3 448
+127.0.0.1 - - [03/May/2020:15:52:04 +0700] "GET /HelloSpringMVC//downloadPDF HTTP/1.1" 200 1541 http-bio-8080-exec-5 14
+0:0:0:0:0:0:0:1 - - [03/May/2020:15:53:20 +0700] "GET /HelloSpringMVC/downloadCSV HTTP/1.1" 200 493 http-bio-8080-exec-7 20
+0:0:0:0:0:0:0:1 - - [03/May/2020:15:53:22 +0700] "GET /HelloSpringMVC/viewCSV HTTP/1.1" 200 493 http-bio-8080-exec-9 4
+0:0:0:0:0:0:0:1 - - [03/May/2020:15:53:24 +0700] "GET /HelloSpringMVC/downloadExcel HTTP/1.1" 200 3813 http-bio-8080-exec-10 1279
