@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Spring Showcase - Form VM</title>
+<link type="text/css" href="../css/humanity/jquery-ui-1.8.16.custom.css"
+	rel="stylesheet" />
+<link type="text/css" href="../css/basic.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui-1.8.16.custom.min.js"></script>
+<script>
+	$(function() {
+		$( "input:submit" ).button();
+	});
+</script>
+<style>
+	.ui-autocomplete-loading { background: white url('../images/ui-anim_basic_16x16.gif') right center no-repeat; }
+</style>
+<script type="text/javascript" src="../js/autocomplete.js"></script>
+<style>
+.error {
+	color: #ff0000;
+	font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+	<div id="container">
+		<form method="post" action="">
+			<table>
+				<tr>
+					<td>Your name:</td>
+					<td>#springFormInput("reservation.userName" "")
+					</td>
+					<td>#springShowErrors("" "")
+					</td>
+				</tr>
+				<tr>
+					<td>Your age:</td>
+					<td>#springFormInput("reservation.age" "")
+					</td>
+					<td>#springShowErrors("" "")
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3"><input type="submit">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+</body>
+</html>

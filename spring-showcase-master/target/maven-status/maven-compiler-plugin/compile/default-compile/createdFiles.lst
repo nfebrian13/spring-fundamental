@@ -1,0 +1,16 @@
+me\m1key\springshowcase\domain\Reservation.class
+me\m1key\springshowcase\to\RequestTypeTo.class
+me\m1key\springshowcase\services\DefaultTrivialService.class
+me\m1key\springshowcase\controllers\NamesController.class
+me\m1key\springshowcase\validators\PersonRegistrationValidator.class
+me\m1key\springshowcase\to\Gender.class
+me\m1key\springshowcase\controllers\AboutController.class
+me\m1key\springshowcase\controllers\FormController.class
+me\m1key\springshowcase\controllers\PersonRegistrationController.class
+me\m1key\springshowcase\to\LabelValueTo.class
+me\m1key\springshowcase\validators\ReservationValidator.class
+me\m1key\springshowcase\controllers\DateController.class
+me\m1key\springshowcase\services\TrivialService.class
+me\m1key\springshowcase\editors\RequestTypeToEditor.class
+me\m1key\springshowcase\to\PersonTo.class
+me\m1key\springshowcase\editors\GenderEditor.class
