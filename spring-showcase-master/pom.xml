@@ -9,7 +9,7 @@
 	<name>Spring Showcase</name>
 	<description>Showcase of the Spring Framework.</description>
 	<properties>
-		<spring.version>3.0.6.RELEASE</spring.version>
+		<spring.version>3.2.18.RELEASE</spring.version>
 	</properties>
 	<dependencies>
 		<dependency>
